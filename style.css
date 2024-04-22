@@ -17,19 +17,19 @@ header{
     font-weight: 200;
     width: 100%;
     height: 60px;
-   
+    border-bottom: solid 1px #007BFF;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
 
-hr{
-  height: 1px;
-  width: 100%;
-  color: #007BFF;
-
+#logo{
+    font-size: 1.1em;
+    
 }
+
+
 #menu>a{
     text-decoration: none;
     padding: 2px;
@@ -64,44 +64,57 @@ hr{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#log-00{
+#login{
     background-color: #ffff;
     color: #007BFF;
-    border: 0;
+    border: solid 1px #007BFF;
     border-radius: 3px;
+    height: 25px;
+    width: 40px;
 }
 
-#cad-00{
-    background-color: #ffff;
-    color: #007BFF;
+#cadastro{
+    
+    height: 25px;
+    background-color: #007BFF;
+    color: #ffff;
     border:solid 1px #007BFF;
     border-radius: 3px;
+    padding: 5px;
 }
 
-#log-00:hover{
+#login:hover{
    background-color: #007BFF;
    color: #ffff;
+   cursor: pointer;
+   scale: 0.98;
 }
 
-#cad-00:hover{
-    background-color:#007BFF;
-    color:#ffff;
+#cadastro:hover{
     border: solid 1px #007BFF;
+    cursor: pointer;
+    scale: 0.95;
 }
 
-main{
+.container{
     font-family: "Bebas Neue",sans-serif;
     display: flex;
     flex-direction: row;
     align-items:center ;
     justify-content: space-around;
-    height: 500px;
+    height: 400px;
 
+}
+
+.flex-item{
+    flex-grow: 90%;
 }
 
 #txt-001{
     color: #007BFF;
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px;
 }
 
 #txt-001>h2{
@@ -109,7 +122,33 @@ main{
     font-size: 1em;
 }
 
-
-#el-001{
-    height: 300px;
+#acess{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    border: 0;
+    color: #ffff;
+    border-radius: 5px;
 }
+
+#acess:hover{
+    scale: 0.95;
+    cursor: pointer;
+}
+
+
+#img-002 { 
+   width:360px;
+}
+/*desktop*/
+@media screen and (min-width:825px) {
+    #img-002{
+       width: 500px;
+    }
+    
+    #txt-001{
+        font-size: 1.4em;
+    }
+}
+
